@@ -2,11 +2,11 @@ import { useNavigate } from "react-router-dom"
 import { PlayCircleFilled } from "@ant-design/icons"
 import "./SongCard.css"
 
-const SongCard = ({songImage, songTitle, songDescription}) => {
+const SongCard = ({path, songImage, songTitle, songDescription}) => {
     const navigate = useNavigate()
     return(
         <div className="song-card" 
-            onClick={()=> navigate('/song-details')}
+            onClick={()=> navigate((path || '/song-details'))}
         >
             <div className="play-button">
                 <PlayCircleFilled style={{

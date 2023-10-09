@@ -1,0 +1,17 @@
+.search-main-container{
+    padding-top: 2.7rem;
+    padding-left: 10px;
+}
+.browse-all-text{
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 1rem;
+    margin-bottom: 5px;
+}
+.search-cards-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}

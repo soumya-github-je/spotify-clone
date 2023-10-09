@@ -1,0 +1,10 @@
+.search-card-details-container{
+    
+    padding-left: 1.3rem;
+    text-transform: capitalize;
+}
+.search-card-details-heading{
+    padding-top: 2rem;
+    font-size: 25px;
+    font-weight: 700;
+}

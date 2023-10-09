@@ -1,21 +1,29 @@
 import "./Navbar.css"
+import { useNavigate } from "react-router-dom"
 import {HomeFilled, SearchOutlined,AppstoreAddOutlined,PlusOutlined,GlobalOutlined} from "@ant-design/icons"
 import {IconButton} from "@mui/material"
 
 const Navbar = () => {
+    const navigate = useNavigate()
     return(
         <div className="navbar">
             <div className="navigation">
                 <ul className="nav-list">
-                    <li className="nav-items">
-                        <HomeFilled />
-                        <span>Home</span>
-                    </li>
-                    <li className="nav-items search">
-                        <SearchOutlined />
-                        <span>Search</span>
-                    </li>
-                </ul>
+                   
+                        <li className="nav-items" 
+                            onClick={() => navigate("/")}
+                        >
+                            <HomeFilled />
+                            <span>Home</span>
+                        </li>
+                   
+                        <li className="nav-items search"
+                            onClick={() => navigate("/search")}
+                        >
+                            <SearchOutlined />
+                            <span>Search</span>
+                        </li>
+                   </ul>
             </div>
             <div className="your-library-container">
                 <div className="library-top-section ">
@@ -29,7 +37,7 @@ const Navbar = () => {
                         <IconButton style={{
                             marginLeft: "auto"
                         }}>
-                            <PlusOutlined style={{ color: "#fff" }} />
+                            <PlusOutlined style={{ color: "#fff" }} title="Create Playlist or Floder" />
                         </IconButton>
                     
                     

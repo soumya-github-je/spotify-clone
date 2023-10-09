@@ -1,6 +1,36 @@
-.author-details-head-container .playlist-head-container{
+.author-details-head-container{
     background: url("https://i.scdn.co/image/ab67616d00001e02b2f6abdab1a5f21816308208");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
+}
+.author-artist-icons-container{
+    padding-left: 0;
+}
+.author-details-bottom-container{
+    background: linear-gradient(#1a1d14 1%, #000 90%);
+    padding-left: 1.5rem;
+}
+.follow-button{
+    background: transparent;
+    border: 1px solid #6c6c6c;
+    color: #fff;
+    height: 30px;
+    width: 85px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.follow-button:hover{
+    border: 1px solid #fff;
+}
+.popular-text-head{
+    font-size: 22px;
+    font-weight: 700;
 }

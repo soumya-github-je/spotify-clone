@@ -10,7 +10,7 @@ const Main = () => {
     })
     const [title, setTitle] = useState('')
     const [bgColor , setBgColor] = useState({
-        background: "#121212cc"
+        background: "#090909"
     })
 
     useEffect(()=> {
